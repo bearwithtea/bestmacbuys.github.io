@@ -1,0 +1,22 @@
+#header-photo {
+    margin-left: 40%;
+    margin-right: 50%;
+}
+
+body {
+    font-family: 'SF Pro Text',-apple-system,BlinkMacSystemFont,Roboto,'Segoe UI',Helvetica,Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol';
+}
+
+#header-text-left p {
+    color: black;
+    margin-top: -50px;
+    margin-left: 20%;
+    margin-top: -20%;
+}
+
+#header-text-right p {
+    font-size: 50px;
+    color: black;
+    margin-top: -160px;
+    margin-left: 70%;
+}
