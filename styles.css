@@ -2,23 +2,33 @@ body {
     font-family: 'SF Pro Text',-apple-system,BlinkMacSystemFont,Roboto,'Segoe UI',Helvetica,Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol';
 }
 
-#header-text-left p {
+#header-text-left {
+    font-size: 50px;
     display: flex;
     flex-wrap: wrap;
     color: black;
-    margin-top: 0;
-    margin-left: 20%;
-    margin-top: -20%;
+    margin-left: 10%;
+    margin-top: -12%;
 }
 
-#header-text-right p {
+#header-text-left div {
+    flex: 1;
+}
+
+#header-text-right {
     font-size: 50px;
+    display: flex;
+    flex-wrap: wrap;
     color: black;
-    margin-top: -160px;
+    margin-top: -10%;
     margin-left: 70%;
 }
 
+#header-text-right div {
+    flex: 1;
+}
+
 #header-photo {
-    margin-left: 40%;
+    margin-left: 39.5%;
     margin-right: 50%;
 }
