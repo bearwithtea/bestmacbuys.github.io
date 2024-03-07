@@ -38,3 +38,16 @@ body {
     border: none;
     background-color: #000;
 }
+
+#header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 350px; /* Adjust this value to your preference */
+    margin: 0 auto;
+}
+
+#header-photo, #header-text {
+    width: 100%;
+}
