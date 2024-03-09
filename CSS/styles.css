@@ -40,12 +40,22 @@ body {
 }
 
 #left-bar {
-    background-color: #f2f2f2;
-    width: 20%;
-    height: 100%;
+    font-size: 300%;
     position: fixed;
-    top: 0;
-    left: 0;
     overflow-x: hidden;
     padding-top: 20px;
+}
+
+#left-bar li {
+    list-style-type: none; 
+    margin-bottom: 18%;
+}
+
+#left-bar li a {
+    text-decoration: none; /* This will remove the underline */
+    color: inherit; /* This will keep the color the same */
+}
+
+#left-bar li a:visited {
+    color: inherit; /* This will keep the color the same even after the link has been visited */
 }
