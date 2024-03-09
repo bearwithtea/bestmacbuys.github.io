@@ -2,41 +2,38 @@ body {
     font-family: 'SF Pro Text',-apple-system,BlinkMacSystemFont,Roboto,'Segoe UI',Helvetica,Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol';
 }
 
-#header-text-left {
-    font-size: 50px;
+#header-container {
     display: flex;
-    flex-wrap: wrap;
-    color: black;
-    margin-left: 10%;
-    margin-top: -15%;
+    justify-content: space-between;
+    align-items: center; 
 }
 
-#header-text-left div {
-    flex: 1;
+#line {
+    position: relative;
+}
+
+#line::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 95%; /* Adjust as needed */
+    margin: auto;
+    border-bottom: 3px solid black;
+    border-radius: 20%;
+}
+
+#header-text-left, #header-text-right {
+    flex: 1; 
+    font-size: 200%;
+    color: black;
+    text-align: center; 
 }
 
 #header-photo {
-    margin-left: 39.5%;
-    margin-right: 50%;
-}
-
-#header-text-right {
-    font-size: 50px;
-    display: flex;
-    flex-wrap: wrap;
-    color: black;
-    margin-top: -10%;
-    margin-left: 70%;
-}
-
-#header-text-right div {
-    flex: 1;
-}
-
-#header-text hr {
-    height: 3px;
-    border: none;
-    background-color: #000;
+    flex: 0; 
+    width: 20%;
 }
 
 #left-bar {
@@ -51,11 +48,70 @@ body {
     margin-bottom: 18%;
 }
 
-#left-bar li a {
-    text-decoration: none; /* This will remove the underline */
-    color: inherit; /* This will keep the color the same */
+#left-bar li a{
+    font-weight: bold;
+    text-decoration: none; 
+    color: inherit; 
 }
 
 #left-bar li a:visited {
-    color: inherit; /* This will keep the color the same even after the link has been visited */
+    color: inherit; 
+}
+
+#left-bar li a {
+    display: inline-block;
+    transition: transform 0.3s ease-in-out;
+}
+
+#left-bar li a:hover {
+    transform: scale(1.1);
+}
+
+#favoritesandnews-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+#favorites, #applenews {
+    flex: 1;
+}
+
+#currentfavorite-container {
+    margin-left: 55%;
+    width: 55%;
+}
+
+#currentfavoriteheader {
+    font-size: 250%;
+    font-weight: bold;
+    margin-left: 20%;
+}
+
+#favorite-source {
+    font-size: 70%;
+    font-weight: lighter;
+}
+
+#currentfavorite-text {
+    font-size: 150%;
+}
+
+#applenewscontainer {
+    margin-left: 30%;
+    width: 55%;
+}
+
+#applenewsheader {
+    font-size: 250%;
+    font-weight: bold;
+    margin-left: 25%;
+}
+
+#articleonetext {
+    font-size: 150%;
+}
+
+#news-source {
+    font-size: 70%;
+    font-weight: lighter;
 }
